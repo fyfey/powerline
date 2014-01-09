@@ -1,6 +1,14 @@
 {
 	"default_module": "powerline.segments.common",
 	"segment_data": {
+        "weather": {
+            "args": {
+                "unit": "C",
+                "localtion_query": "Ipswich, UK",
+                "temp_coldest": 0,
+                "temp_hottest": 35
+            }
+        },
         "branch": {
             "before": " ",
             "args": {
@@ -30,13 +38,7 @@
 				"name": "branch"
 			},
             {
-                "name": "weather",
-                "args": {
-                    "unit": "C",
-                    "localtion_query": "Ipswich, UK",
-                    "temp_coldest": 0,
-                    "temp_hottest": 35
-                }
+                "name": "weather"
             },
 			{
 				"name": "date",
