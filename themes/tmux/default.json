@@ -1,0 +1,53 @@
+{
+	"default_module": "powerline.segments.common",
+	"segment_data": {
+        "branch": {
+            "before": " ",
+            "args": {
+                "status_colors": true
+            }
+        },
+		"uptime": {
+			"before": "⇑  "
+		},
+		"external_ip": {
+			"before": "ⓦ  "
+		},
+		"date": {
+			"before": "⌚ "
+		},
+		"email_imap_alert": {
+			"before": "✉ ",
+			"args": {
+				"username": "",
+				"password": ""
+			}
+		}
+	},
+	"segments": {
+		"right": [
+			{
+				"name": "branch"
+			},
+            {
+                "name": "weather",
+                "args": {
+                    "unit": "C",
+                    "localtion_query": "Ipswich, UK",
+                    "temp_coldest": 0,
+                    "temp_hottest": 35
+                }
+            },
+			{
+				"name": "date",
+				"args": {
+					"format": "%H:%M",
+					"istime": true
+				}
+			},
+			{
+				"name": "hostname"
+			}
+		]
+	}
+}
